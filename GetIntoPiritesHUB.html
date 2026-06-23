@@ -60,10 +60,6 @@
             margin-bottom: 12px;
         }
 
-        .download-btn:last-child {
-            margin-bottom: 0; /* Removes bottom margin from the last button */
-        }
-
         .download-btn:active {
             transform: scale(0.98);
         }
@@ -87,12 +83,22 @@
         .btn-secondary:hover {
             background-color: #218838;
         }
+
+        /* Password Hint Styling */
+        .password-hint {
+            display: block;
+            margin-top: 15px;
+            color: #a0aec0;
+            font-size: 13px;
+            font-weight: 500;
+            letter-spacing: 0.5px;
+        }
     </style>
 </head>
 <body>
 
     <div class="download-card">
-        <div class="file-icon">📦</div>
+        <div class="file-icon"></div>
         <h1>Ansys Products 2019</h1>
         <p>Select a package below to begin your direct download sequence.</p>
         
@@ -103,6 +109,8 @@
         <a href="https://213-239-208-8.top/Getintopc.com/ANSYS_Products_2019_R1_SSQ_Fix_Only.rar?md5=OU1nQ1nldGILEINv5txk5Q&expires=1784823395" class="download-btn btn-secondary" download>
             SQQ Direct Download (Fix Only)
         </a>
+
+        <span class="password-hint">pass:123</span>
     </div>
 
 </body>
